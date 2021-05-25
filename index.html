@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- ESTILOS CSS-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Covid-19!</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">COVID-19</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mundo.html">Covid-Mundo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peru.html">Covid-Perú</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sobre-Covid
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="sintomas.html">Síntomas</a></li>
+                  <li><a class="dropdown-item" href="prevencion.html">Prevención</a></li>
+                  <li><a class="dropdown-item" href="tratamiento.html">Tratamiento</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Novedades</a></li>
+                  <li><a class="dropdown-item" href="#">Extras</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Carrusel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/3.jpg" height="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>COVID 19</h5>
+            <p>El virus mortal del siglo 21</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/1.jpg" height="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ten cuidado</h5>
+            <p>No a la aglomeracion de la gente. Cuida tu vida.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/4.jpg" height="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Prueba rapido</h5>
+            <p>No te confies, no lleves el virus a tu casa.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" height="500" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Virus mortal</h5>
+            <p>Lavate las manos si no deseas que se lleve a tu familia.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    
+      <!-- <audio controls>
+        <source src="src/covid19.mp3" type="audio/mpeg">
+        </audio>
+      -->
+      <div>
+        <br>
+        <div class="container" id="mision-vision">
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-10">
+                <br>
+                <center><h1>Historia Covid 19</h1>
+                <h3>
+                  <p style="text-align:justify">La pandemia de COVID-19 (conocida popularmente como 
+                    pandemia de coronavirus) es una pandemia derivada de la enfermedad ocasionada 
+                    por el virus SARS-CoV-2.5​ Su primer caso fue identificado en diciembre de 2019 
+                    en la ciudad de Wuhan,7​ capital de la provincia de Hubei, en la República Popular
+                     China.​ La Organización Mundial de la Salud (OMS) la reconoció como una pandemia el 11 de marzo de 
+                     2020 (en esa fecha informaba de 118 000 casos en 114 países, y 4291 personas
+                      habían perdido la vida).</p>
+                </h3>
+              </div>
+              <div class="col-1">
+        
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+    
+        <div class="container" id="mision-vision">
+            
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-5">
+                <br><br>
+                <br>
+                <center><h1>Prevencion</h1>
+                <h3>
+                  <p style="text-align:justify">Transformar el cuidado de tu salud.</p>
+                </h3>
+              </div>
+              <div class="col-5">
+                <br>
+                <center><h1>Contagio</h1>
+                <h3>
+                  <p style="text-align:justify">Ser el líder y referente de la salud en Latinoamérica con atención centrada en las
+                    personas.</p>
+                </h3>
+              </div>
+              <div class="col-1">
+        
+              </div>
+            </div>
+          </div>
+    <div>
+      <br>
+      <center><img src="img/img123.png"></center>
+      <br>
+    </div>
+          <div class="container" id="mision-vision">
+            <br>
+        
+            <center><h1 class="display-4 mb-5">Transmision</h1></center>
+            <div class="row ">
+              <div class="col-md-4">
+                <h4>Aire</h4>
+                <p class="lead">El virus se transmite generalmente de persona a persona a través de las pequeñas gotas de saliva, conocidas como microgotas de Flügge, que se emiten al hablar, estornudar, toser o espirar.</p>
+              </div>
+              <div class="col-md-4">
+                <h4>Contacto</h4>
+                <p class="lead">También está documentada la transmisión por aerosoles. Se difunde principalmente cuando las personas están en contacto cercano, pero también se puede difundir al tocar una superficie contaminada y luego llevar las manos contaminadas a la cara o las mucosas.</p>
+              </div>
+              <div class="col-md-4">
+                <h4>Incubacion</h4>
+                <p class="lead">Su período de incubación suele ser de cinco días, pero puede variar de dos a catorce días.</p>
+              </div>
+              <div class="col-md-4">
+                <h4>Complicaciones</h4>
+                <p class="lead">Las complicaciones pueden incluir la neumonía, el síndrome respiratorio agudo o la sepsis.17​18​19​ Para febrero del 2021, hay varias vacunas siendo utilizadas por distintos países.</p>
+              </div>
+              <div class="col-md-4">
+                <h4>Sintomas</h4>
+                <p class="lead">.Los síntomas más comunes son la fiebre, la tos seca y dificultades para respirar.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div>
+      <br><br>
+      <center><img src="img/img1234.jpg"></center>
+    </div>
+
+    <center><div><fieldset id="ingresar">
+      <br>
+      <legend>Consultar segun mis sintomas</legend>
+      <input type="checkbox" id="sintoma">
+      <label for="sintoma">Gripe y/o Tos</label><br>
+      <input type="checkbox" id="sintoma2">
+      <label for="sintoma2">Dolor muscular</label><br>
+      <input type="number" id="temperatura" >
+      <label for="temperatura">Temperatura</label>
+      <br><br>
+      <button onclick="mostrar_alert()">Comprobar</button>
+      <script type="text/javascript">
+          function mostrar_alert(){
+              var sintoma = document.getElementById("sintoma").checked;
+              var sintoma2 = document.getElementById("sintoma2").checked;
+              var temperatura = document.getElementById("temperatura").value;
+              var num=0;
+              if(sintoma){
+                  num++;
+              }
+
+              if(sintoma2){
+                  num++;
+              }
+              if(temperatura >36){
+                  num++;
+                  num++;
+              }
+              if(num<2){
+                  window.swal("No hay problema");
+              }else if(num==2){
+                  window.swal("Cuidado,puedes tener covid"+num);
+              }else if(num>2){
+                window.swal("PELIGRO! Ve al establecimiento de salud más cercano!!!");
+              }
+
+          }
+      </script>
+  </fieldset></div></center>
+    <div>
+      <br><br>
+      <center><h1>Conoce las novedades del covid 19</h1></center>
+      <br><br>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <center><div class="card" style="width: 18rem;">
+          <img src="img/C1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">El primer estudio que ha examinado casos de suicidios en el contexto de la pandemia de COVID-19 en varios países ha encontrado que, en países de renta media y alta, el número de suicidios se mantuvo o disminuyó en los primeros meses de la pandemia. Sin embargo, la situación puede cambiar cuando se dejen sentir los efectos económicos.</p>
+          </div>
+        </div></center>
+      </div>
+      <div class="col-4">
+        <center><div class="card" style="width: 18rem;">
+          <img src="img/C2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Desarrollar una vacuna capaz de proteger contra cualquier coronavirus conocido o desconocido (por lo menos aquellos de la familia de los betacoronavirus) es posible, y se ha convertido en una prioridad. Varios equipos están trabajando actualmente en ello, mediante diferentes estrategias.</p>
+          </div>
+        </div></center>
+      </div>
+      <div class="col-4">
+        <center><div class="card" style="width: 18rem;">
+          <img src="img/C3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Un estudio retrospectivo con casi 250.000 personas recuperadas de COVID-19 muestra que el 33% de ellas recibió un diagnóstico neurológico o psiquiátrico en los seis meses posteriores, sobre todo aquellas que habían sufrido enfermedad grave. Pero casi el 90% de estos pacientes ya habían recibido un diagnóstico previamente. Los síntomas reportados iban desde demencia e ictus hasta ansiedad e insomnio.</p>
+          </div>
+        </div></center>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container-footer">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Nosotros</h4>
+                  <ul>
+                      <li>
+                          <p>Empresa: Informando al mundo</p>
+                      </li>
+                      <li>
+                          <p>Gmail: Informes@gmail.com</p>
+                      </li>
+                      <li>
+                          <p>Ubicacion: Arequipa-Perú</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Ayuda</h4>
+                  <ul>
+                      <li>
+                          <p>911</p>
+                      </li>
+                      <li>
+                          <p>911@gmail.com</p>
+                      </li>
+                      <li>
+                          <p></p>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <h4>Información</h4>
+                  <div >
+                    <a href="https://covid19.minsa.gob.pe/sala_situacional.asp">Ingrese aquí</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
